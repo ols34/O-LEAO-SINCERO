@@ -1,69 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>O LEÃO SINCERO</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('https://drive.google.com/uc?export=view&id=1p3YB_k6lT92e-oOTs0bbiPJ4E8DJ-Dt-') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #f5f5f5;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="O Leão Sincero - Verdade que liberta, palavra que transforma." />
+<meta name="keywords" content="Evangelho, Verdade, Bíblia, Jesus, Leão Sincero, Palavra, Reflexão" />
+<meta name="author" content="O Leão Sincero" />
+<title>O Leão Sincero</title>
+
+<!-- Preload da imagem -->
+<link rel="preload" as="image" href="IMG_0094.JPG" />
+
+<style>
+  @keyframes zoomBackground {
+    0% { background-size: 105%; }
+    50% { background-size: 110%; }
+    100% { background-size: 105%; }
+  }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+    text-align: center;
+    background: url('IMG_0094.JPG') no-repeat center center fixed;
+    background-size: 105%;
+    animation: zoomBackground 20s ease-in-out infinite;
+    background-attachment: scroll; /* para evitar travar scroll em celular */
+  }
+  .container {
+    background-color: rgba(0, 0, 0, 0.85);
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+    padding: 45px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+    animation: fadeIn 2s ease forwards;
+  }
+  h1 {
+    font-size: 3.8rem;
+    margin-bottom: 0.3em;
+    text-shadow: 5px 5px 10px rgba(255, 0, 0, 0.9);
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+  }
+  .btn {
+    display: inline-block;
+    padding: 15px 32px;
+    margin: 10px;
+    background-color: #ff0000;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+  }
+  .btn:hover,
+  .btn:focus {
+    background-color: #cc0000;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(204, 0, 0, 1);
+  }
+  footer {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+
+  /* Responsividade */
+  @media (max-width: 600px) {
     h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 2px 2px 5px #000;
-      letter-spacing: 0.15em;
-      user-select: none;
+      font-size: 2.5rem;
     }
     p {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 3px #000;
     }
-    a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.8rem 1.5rem;
-      background-color: rgba(255, 111, 0, 0.9);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.3s;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    .container {
+      margin: 30px 15px 20px 15px;
+      padding: 30px 15px;
     }
-    a:hover {
-      background-color: #ff8c00;
-      transform: scale(1.05);
+    .btn {
+      padding: 12px 26px;
+      margin: 8px;
+      font-size: 1rem;
     }
-    footer {
-      margin-top: auto;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #ddd;
-      text-shadow: 1px 1px 3px #000;
-      user-select: none;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <h1>O LEÃO SINCERO 🦁🔥</h1>
-  <p>Onde a verdade ruge sem filtro, sem máscara, sem enrolação.</p>
-
-  <a href="https://www.youtube.com/@LEAO.SINCERO" target="_blank">🎥 YouTube</a>
-  <a href="https://www.tiktok.com/@o_leaosincero" target="_blank">🎵 TikTok</a>
-
-  <footer>© 2025 O LEÃO SINCERO — Rugindo na verdade. 🦁🔥</footer>
+  <div class="container">
+    <h1>🦁 O LEÃO SINCERO 🔥</h1>
+    <p>Verdade que liberta. Palavra que transforma.<br />Seja bem-vindo à selva da verdade.</p>
+    <a class="btn" href="https://www.youtube.com/@LEAO.SINCERO" target="_blank" rel="noopener noreferrer">🎥 YouTube</a>
+    <a class="btn" href="https://www.tiktok.com/@o_leaosincero" target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+    <footer>&copy; 2025 O Leão Sincero. Todos os direitos reservados.</footer>
+  </div>
 </body>
 </html>
